@@ -1,0 +1,93 @@
+<div class="sec-tools sec-blocks">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-3">
+        <div class="sec-top">
+          <img src="assets/images/landing/sec-icon-3.svg" alt="img" />
+          <h5 class="sec-title">Tools</h5>
+          <div class="sec-desc">Visualize your important invesment goals and the tasks.</div>
+          <button class="btn btn-primary mr-3 mb-4" type="button">Loan Calculators</button>
+          <button class="btn btn-light" type="button">ROI Calculators</button>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+
+        <owl-carousel-o [options]="customOptions">
+
+          <!-- Slide 1 -->
+    
+          <ng-template carouselSlide>
+            <div class="row">
+              <div *ngFor="let item of data.slide1" class="col-md-4">
+                <div [routerLink]="item.link" [attr.class]="'card card-'+item.color">
+                  <div class="card-body">
+                    <div class="card-icon">
+                      <img [src]="item.icon" alt="img" />
+                    </div>
+                    <h5 class="card-title">{{item.title}}</h5>
+                    <div class="text-right">
+                      <a class="btn btn-light btn-readMore">
+                        <img src="assets/images/landing/right-arrow.svg" alt="img" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+
+          <!-- Slide 2 -->
+    
+          <ng-template carouselSlide>
+            <div class="row">
+              <div *ngFor="let item of data.slide2" class="col-md-4">
+                <div [routerLink]="item.link" [attr.class]="'card card-'+item.color">
+                  <div class="card-body">
+                    <div class="card-icon">
+                      <img [src]="item.icon" alt="img" />
+                    </div>
+                    <h5 class="card-title">{{item.title}}</h5>
+                    <div class="text-right">
+                      <a class="btn btn-light btn-readMore">
+                        <img src="assets/images/landing/right-arrow.svg" alt="img" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+
+          <!-- Slide 3 -->
+    
+          <ng-template carouselSlide>
+            <div class="row">
+              <div *ngFor="let item of data.slide3" class="col-md-4">
+                <div [routerLink]="item.link" [attr.class]="'card card-'+item.color">
+                  <div class="card-body">
+                    <div class="card-icon">
+                      <img [src]="item.icon" alt="img" />
+                    </div>
+                    <h5 class="card-title">{{item.title}}</h5>
+                    <div class="text-right">
+                      <a class="btn btn-light btn-readMore">
+                        <img src="assets/images/landing/right-arrow.svg" alt="img" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+
+        </owl-carousel-o>
+
+      </div>
+
+    </div>
+    
+  </div>
+</div>

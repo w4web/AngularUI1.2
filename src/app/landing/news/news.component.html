@@ -1,0 +1,33 @@
+<div class="sec-news">
+  <div class="container">
+
+    <div class="news-top">
+      <h4>News Feed</h4>
+    </div>
+    
+    <div class="news-slider nav-circle">
+      <owl-carousel-o [options]="customOptions">
+        <ng-container *ngFor="let item of data; let i = index">
+          <ng-template carouselSlide>
+            <div [routerLink]="item.link" class="card card-news">
+              <div class="card-body">
+                <div class="news-image">
+                  <img [src]="item.image" alt="img" />
+                </div>
+                <h5 class="card-title">{{item.title}}</h5>
+                <p class="card-desc">{{item.desc}}</p>
+                <div class="readMore d-flex align-items-center">
+                  <span>Read article</span> 
+                  <button class="btn nav-btn">
+                    <img src="assets/images/landing/right-arrow.svg" alt="img" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+
+  </div>
+</div>

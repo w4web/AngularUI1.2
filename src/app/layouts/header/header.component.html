@@ -1,0 +1,25 @@
+<header>
+  <div class="container">
+    <div class="nav-wrap">
+      <a class="logo" routerLink="/">
+        <img src="assets/images/landing/logo.svg" alt="img" />
+      </a>
+      <a class="menu-handler" (click)="showMobileMenu = !showMobileMenu" href="javascript:void(0);">
+          <span></span>
+          <span></span>
+          <span></span>
+      </a>
+      <div class="main-menu" [class.show]="showMobileMenu">
+        <ul class="ls-none">
+          <li class="icon-search"><a routerLink="/"><img src="assets/images/landing/search.svg" alt="img" /></a></li>
+          <li><a routerLink="/">About Us &nbsp;</a></li>
+          <li><a routerLink="/"><img src="assets/images/landing/icon-compare2.svg" alt="img" />Compare</a></li>
+          <li><a routerLink="/"><img src="assets/images/landing/icon-preview.svg" alt="img" />Preview</a></li>
+          <li><a routerLink="/"><img src="assets/images/landing/icon-tools.svg" alt="img" />Tools</a></li>
+          <li><a routerLink="/"><img src="assets/images/landing/icon-explore.svg" alt="img" />Explore</a></li>
+          <li><button class="theme-btn">Log In/Sign Up</button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

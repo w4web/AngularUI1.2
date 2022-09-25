@@ -1,0 +1,129 @@
+<div class="banner-tab">
+
+  <!-- Slide 1 -->
+
+  <div *ngIf="selectedSlide === 1" class="tab-slide d-flex align-items-center tab-slide-1">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7 ts-left">
+          <div class="ts-text">
+            <div class="title-with-circle">
+              <img src="assets/images/landing/circle.svg" alt="img" />
+              <h1>FIN<span>360°...</span></h1>
+            </div>
+            <h2>Only Math Works!!</h2>
+            <h3>Get a financial makeover.</h3>
+          </div>
+        </div>
+        <div class="col-md-5 ts-right">
+          <img src="assets/images/landing/banner1.svg" alt="img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+
+  <div *ngIf="selectedSlide === 2" class="tab-slide d-flex align-items-center tab-slide-2">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7 ts-left">
+          <div class="ts-text">
+            <h2>Compare various <span>investment</span> options</h2>
+            <p>FinVedik is a one-stop solution for all your <br> financial needs.</p>
+            <button class="btn btn-primary" type="button">Go to Compare</button>
+          </div>
+        </div>
+        <div class="col-md-5 ts-right">
+          <img src="assets/images/landing/banner2.svg" alt="img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+
+  <div *ngIf="selectedSlide === 3" class="tab-slide d-flex align-items-center tab-slide-3">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7 ts-left">
+          <div class="ts-text">
+            <h2>Don't know where to<br> begin?<br> <span>We got you covered.</span></h2>
+            <p>We provide an instant snapshot of your current financial position with our FinVedik Financial Risk Behaviour feature. </p>
+            <button class="btn btn-primary" type="button">Go to Preview</button>
+          </div>
+        </div>
+        <div class="col-md-5 ts-right">
+          <img src="assets/images/landing/banner3.svg" alt="img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 4 -->
+
+  <div *ngIf="selectedSlide === 4" class="tab-slide d-flex align-items-center tab-slide-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7 ts-left">
+          <div class="ts-text">
+            <h2>There is a cost for<br> every delay..</h2>
+            <p>You can also use the calculators in the app to plan for your life events like retirement, home loan or financing for higher studies in advance.</p>
+            <button class="btn btn-primary" type="button">Use our tools</button>
+          </div>
+        </div>
+        <div class="col-md-5 ts-right">
+          <img src="assets/images/landing/banner4.svg" alt="img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 5 -->
+
+  <div *ngIf="selectedSlide === 5" class="tab-slide d-flex align-items-center tab-slide-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7 ts-left">
+          <div class="ts-text">
+            <h2>Explore blogs, videos<br> and social media feed</h2>
+            <p>We offer a wide variety of blogs, videos and social media feed to explore topics related to your finances.</p>
+            <button class="btn btn-primary" type="button">Explore now</button>
+          </div>
+        </div>
+        <div class="col-md-5 ts-right">
+          <img src="assets/images/landing/banner5.svg" alt="img" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Tab label -->
+
+  <div class="tab-label-wrap">
+    <ul class="tab-label ls-none">
+      <li (click)="slideChange(1)">
+        <img src="assets/images/landing/icon-fin.svg" alt="img" />
+        <div class="tl-text">Fin 360</div>
+      </li>
+      <li (click)="slideChange(2)">
+        <img style="width: 24px;" src="assets/images/landing/icon-compare2.svg" alt="img" />
+        <div class="tl-text">Compare</div>
+      </li>
+      <li (click)="slideChange(3)">
+        <img src="assets/images/landing/icon-preview.svg" alt="img" />
+        <div class="tl-text">Preview</div>
+      </li>
+      <li (click)="slideChange(4)">
+        <img src="assets/images/landing/icon-tools.svg" alt="img" />
+        <div class="tl-text">Tools</div>
+      </li>
+      <li (click)="slideChange(5)">
+        <img src="assets/images/landing/icon-explore.svg" alt="img" />
+        <div class="tl-text">Explore</div>
+      </li>
+    </ul>
+  </div>
+
+</div>

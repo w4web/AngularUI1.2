@@ -1,0 +1,61 @@
+<div class="sec-social">
+  <div class="social-inner">
+
+    <div class="container">
+
+      <div class="row align-items-center">
+
+        <div class="col-lg-6 social-col-left">
+
+          <div class="row">
+            <div *ngFor="let item of data" class="col-md-6">
+              <div [routerLink]="item.link" class="card card-social">
+                <div class="card-body">
+                  <h5 class="card-title">{{item.title}}</h5>
+                  <h5 class="card-desc">{{item.desc}}</h5>
+                  <div class="card-profile">
+                    <div class="cp-img">
+                      <img [src]="item.profile.image" alt="img" />
+                    </div>
+                    <div class="cp-data">
+                      <div class="cp-name">{{item.profile.name}}</div>
+                      <div class="cp-about">{{item.profile.about}}</div>
+                    </div>
+                  </div>
+                  <div class="social-icon">
+                    <img [src]="item.icon" alt="img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6 social-col-right">
+          <div class="scr-inner">
+            <h2 class="icon-title">
+              <img src="assets/images/landing/social/icon-thumb.svg" alt="img" />Social media feed
+            </h2>
+            <div class="desc-with-nav d-flex align-items-center">
+              <div class="dn-left">
+                <a class="btn btn-light nav-btn nav-up-btn">
+                  <img src="assets/images/landing/up-arrow.svg" alt="img" />
+                </a>
+                <a class="btn btn-light nav-btn nav-down-btn">
+                  <img src="assets/images/landing/up-arrow.svg" alt="img" />
+                </a>
+              </div>
+              <div class="dn-right">
+                Finance related media updates
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>

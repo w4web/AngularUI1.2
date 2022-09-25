@@ -1,0 +1,79 @@
+<footer>
+  <div class="container">
+    <div class="row row-footer-links">
+      <div class="col-md-6">
+        <strong class="f-heading">Tools</strong>
+        <ul class="row footer-links footer-tool-links">
+          <li class="col-lg-4 col-md-6" *ngFor="let tool of tools"><a [routerLink]="tool.link">{{tool.text}}</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 f-col-16">
+        <strong class="f-heading">Compare</strong>
+        <ul class="footer-links">
+          <li *ngFor="let item of compare"><a [routerLink]="item.link">{{item.text}}</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 f-col-34">
+        <strong class="f-heading">Preview</strong>
+        <ul class="row footer-links">
+          <li class="col-lg-6" *ngFor="let item of preview"><a [routerLink]="item.link">{{item.text}}</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-7 border-right">
+        <div class="footer-logo">
+          <a class="logo" routerLink="/">
+            <img src="assets/images/landing/logo.svg" alt="img" />
+          </a>
+        </div>
+        <ul class="info-links d-flex align-items-center ls-none">
+          <li>
+            <a class="d-flex align-items-center" routerLink="/">
+              <img src="assets/images/landing/icon-mail.svg" alt="img" />info@finvedik.com
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-items-center" routerLink="/">
+              <img src="assets/images/landing/icon-phon.svg" alt="img" />99880 - 99880
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-items-center" routerLink="/">
+              <img src="assets/images/landing/icon-map.svg" alt="img" />Work in progress
+            </a>
+          </li>
+        </ul>
+        <ul class="menu-links d-flex align-items-center ls-none">
+          <li><a routerLink="/">Explore</a></li>
+          <li><a routerLink="/">About Us</a></li>
+          <li><a routerLink="/">Contact Us</a></li>
+          <li><a routerLink="/">Policy</a></li>
+          <li><a routerLink="/">FAQ</a></li>
+        </ul>
+        <ul class="social-icons d-flex align-items-center ls-none">
+          <li><a routerLink="/"><img src="assets/images/landing/social-1.svg" alt="img" /></a></li>
+          <li><a routerLink="/"><img src="assets/images/landing/social-2.svg" alt="img" /></a></li>
+          <li><a routerLink="/"><img src="assets/images/landing/social-3.svg" alt="img" /></a></li>
+          <li><a routerLink="/"><img src="assets/images/landing/social-4.svg" alt="img" /></a></li>
+          <li><a routerLink="/"><img src="assets/images/landing/social-5.svg" alt="img" /></a></li>
+        </ul>
+        <div class="credit-text">
+          vector credits: freepik
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="newsletter">
+          <h6>Join Our Newsletter</h6>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter text field" />
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+          <div class="news-text">*We will send you weekly updates for your better finance management.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
